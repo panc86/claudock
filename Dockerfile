@@ -10,6 +10,7 @@ RUN apt-get update && \
         ca-certificates \
         curl \
         git \
+        jq \
         openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
