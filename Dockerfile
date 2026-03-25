@@ -10,7 +10,6 @@ RUN apt-get update && \
         ca-certificates \
         curl \
         git \
-        jq \
         openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
@@ -19,11 +18,16 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
     apt-get install -y --no-install-recommends nodejs && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Claude Code globally
-RUN npm install -g @anthropic-ai/claude-code
-
 # Switch to non-privileged user (ubuntu ships with UID/GID 1000)
 USER ubuntu
+WORKDIR /home/ubuntu
+
+# Install Claude Code globally
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
+# Install UV Python package manager
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
 WORKDIR /home/ubuntu/projects
 
 ENTRYPOINT [ "/bin/bash" ]
