@@ -1,7 +1,7 @@
 ---
 name: write-a-prd
 description: Create a PRD and implementation plan through user interview, codebase exploration, and module design.
-  Use when user wants to write a PRD, product requirements document, spec, plan, or design a new feature.
+  Use when user wants to write a PRD, product requirements document, spec, plan, or design a new product of feature.
   Prefer this skill over jumping straight to code when the user's request is ambiguous or large in scope.
 ---
 
@@ -26,11 +26,10 @@ Share your findings with the user to validate understanding before planning.
     - Key interfaces between components
     - Data flow through the system
 - Sketch a system design diagram using ASCII art to visualize components and their dependencies.
-- Outline a test plan with the most important tests to write using the [TDD](~/.claude/skills/tdd/SKILL.md) skill.
 
 # 3. Output Phase
 
-Default output folder: ./docs. Confirm with the user ([Y/n]).
+Default output location is ./docs/PRD.md. Confirm with the user ([Y/n]).
 
 ## PRD Template
 
@@ -60,9 +59,14 @@ Example:
 
 Do NOT include specific file paths or code snippets - they become outdated quickly.
 
+## Implementation Plan
+
+Write a step-by-step implementation plan that another developer (or Claude) can follow to build the product.
+
 ## Testing Strategy
 
 - What makes a good test for this feature (test behavior, not implementation)
+- Use the [TDD](~/.claude/skills/tdd/SKILL.md) skill philosophy
 - Which modules need tests and what kind (unit, integration, e2e)
 - Similar tests in the codebase to use as reference
 
@@ -78,7 +82,3 @@ Do NOT include specific file paths or code snippets - they become outdated quick
 
 [Suggested order of implementation, dependencies between stories]
 ```
-
-## Implementation Plan
-
-Write a step-by-step plan in `implementation_plan.md` that another developer (or Claude) could follow to build the feature.
