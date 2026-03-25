@@ -1,0 +1,21 @@
+# Claude Code - sensitive / ephemeral
+.claude.json
+.claude/.credentials.json
+.claude/history.jsonl
+.claude/stats-cache.json
+.claude/backups/
+.claude/sessions/
+.claude/session-env/
+.claude/file-history/
+.claude/shell-snapshots/
+.claude/ide/
+.claude/cache/
+.claude/paste-cache/
+.claude/plugins/cache/
+.claude/downloads/
+.claude/telemetry/
+.claude/tasks/
+.claude/plans/
+
+# Projects (each has its own repo)
+projects/

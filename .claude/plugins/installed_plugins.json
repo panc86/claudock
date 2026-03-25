@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "plugins": {
+    "skill-creator@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/ep/.claude/plugins/cache/claude-plugins-official/skill-creator/b10b583de281",
+        "version": "b10b583de281",
+        "installedAt": "2026-03-23T17:56:47.165Z",
+        "lastUpdated": "2026-03-25T03:31:16.750Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/ep/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:53:41.279Z",
+        "lastUpdated": "2026-03-23T18:53:41.279Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ]
+  }
+}

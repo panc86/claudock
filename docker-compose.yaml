@@ -1,0 +1,11 @@
+services:
+  claude:
+    build: .
+    image: claudio:latest
+    container_name: claudio
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./.claude:/home/ubuntu/.claude
+      - ./.claude.json:/home/ubuntu/.claude.json
+      - ./projects:/home/ubuntu/projects
