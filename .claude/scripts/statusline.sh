@@ -91,7 +91,7 @@ if [ -n "$used" ] && [ "$used" != "null" ]; then
   for ((i=0; i<empty; i++)); do bar+="░"; done
   context_str="${bar} ${used}%"
 else
-  context_str="░░░░░░░░░░ ?%"
+  context_str="░░░░░░░░░░ 0%"
 fi
 
 # ---------------------------------------------------------------------------
