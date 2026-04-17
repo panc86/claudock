@@ -29,5 +29,3 @@ RUN curl -fsSL https://claude.ai/install.sh | bash
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 WORKDIR /home/ubuntu/projects
-
-ENTRYPOINT [ "/bin/bash" ]
